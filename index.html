@@ -8,54 +8,57 @@
 </head>
 <body>
 
+  <!-- NAVBAR SIMPLIFIÉE -->
   <nav>
     <a href="index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
+
     <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+
     <ul class="nav-links">
       <li><a href="index.html" class="active">Accueil</a></li>
-      <li class="dropdown">
-        <button class="dropdown-toggle">Mastères ▾</button>
-        <div class="dropdown-menu">
-          <div class="menu-label">Niveau 7</div>
-          <a href="mrh/stage.html">Manager des Ressources Humaines</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <button class="dropdown-toggle">BTS ▾</button>
-        <div class="dropdown-menu">
-          <div class="menu-label">Niveau 5</div>
-          <a href="bts-sio/stage.html">BTS SIO (SISR / SLAM)</a>
-        </div>
-      </li>
+      <li><a href="bts/index.html">BTS</a></li>
+      <li><a href="bachelor/index.html">Bachelor</a></li>
+      <li><a href="mastere/index.html">Mastères</a></li>
     </ul>
   </nav>
 
+  <!-- CONTENU -->
   <div class="container">
 
+    <!-- HERO -->
     <div class="hero">
       <div class="hero-badge">Usage interne — Équipe pédagogique</div>
       <h1>ITIC <span>Pédagogie</span></h1>
-      <p>Fiches stages, missions acceptées et guides pratiques. Sélectionnez une filière.</p>
+      <p>Fiches stages, missions acceptées et guides pratiques. Sélectionnez un niveau de formation.</p>
     </div>
 
+    <!-- CARTES NIVEAUX -->
     <div class="filieres-grid">
 
-      <a href="mrh/stage.html" class="filiere-card card-mrh">
-        <span class="card-badge">Niveau 7 — RNCP 38493</span>
-        <h3>Manager des Ressources Humaines</h3>
-        <p>M1 & M2 — Titre RNCP certifié par ARTEMYS-IMC. Durées de stage, missions par bloc, obligations tuteur.</p>
-        <span class="card-arrow">Voir la fiche →</span>
+      <a href="bts/index.html" class="filiere-card card-sio">
+        <span class="card-badge">Niveau 5 — Diplôme d'État</span>
+        <h3>BTS</h3>
+        <p>Formations techniques et professionnalisantes. Accédez aux fiches stages et missions par spécialité.</p>
+        <span class="card-arrow">Voir les formations →</span>
       </a>
 
-      <a href="bts-sio/stage.html" class="filiere-card card-sio">
-        <span class="card-badge">Niveau 5 — Diplôme d'État</span>
-        <h3>BTS SIO</h3>
-        <p>Option SISR & SLAM — Durées de stage, missions par bloc, livrables attendus, épreuves E4 & E5.</p>
-        <span class="card-arrow">Voir la fiche →</span>
+      <a href="bachelor/index.html" class="filiere-card card-ndrc">
+        <span class="card-badge">Niveau 6 — Bachelor</span>
+        <h3>Bachelor</h3>
+        <p>Développement, systèmes, marketing digital. Consultez les exigences de stage et les missions attendues.</p>
+        <span class="card-arrow">Voir les formations →</span>
+      </a>
+
+      <a href="mastere/index.html" class="filiere-card card-mrh">
+        <span class="card-badge">Niveau 7 — Mastère</span>
+        <h3>Mastères</h3>
+        <p>Expertise métier et management. Détails des stages, missions par bloc et obligations pédagogiques.</p>
+        <span class="card-arrow">Voir les formations →</span>
       </a>
 
     </div>
 
+    <!-- FOOTER -->
     <div style="text-align: center; margin-top: 60px; font-size: 11px; color: #4a5568;">
       ITIC — 2025/2026
     </div>
