@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage — Concepteur Développeur d’Applications | ITIC</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
+  </nav>
+
+  <div class="container">
+
+    <div class="filiere-header">
+      <h1>Concepteur Développeur d’Applications</h1>
+      <p class="subtitle">Titre professionnel CDA — Niveau 6</p>
+      <span class="badge">Fiche Stage — Bachelor</span>
+    </div>
+
+    <div class="content-card">
+
+      <!-- DURÉE -->
+      <div class="section">
+        <div class="section-title">Durée minimale de stage</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Situation</th><th>Durée minimum</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Étudiant en formation continue</td>
+              <td><span class="chiffre-gros">350 heures</span> minimum</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box" style="margin-top: 20px;">
+          Une expérience en entreprise est <strong>obligatoire</strong> pour valider le titre.
+        </div>
+      </div>
+
+      <!-- MISSIONS -->
+      <div class="section">
+        <div class="section-title">Missions acceptées</div>
+        <p class="section-intro">Les missions doivent couvrir au moins 2 des 3 blocs ci-dessous.</p>
+
+        <div class="blocs-grid">
+
+          <!-- BLOC A -->
+          <div class="bloc-card bloc-a">
+            <div class="bloc-label">Bloc A</div>
+            <h3>Développement d’application</h3>
+            <ul>
+              <li>Développement d’interfaces utilisateur (front-end)</li>
+              <li>Développement de composants métier (back-end)</li>
+              <li>Participation à un projet informatique</li>
+              <li>Tests unitaires et validation du code</li>
+            </ul>
+          </div>
+
+          <!-- BLOC B -->
+          <div class="bloc-card bloc-b">
+            <div class="bloc-label">Bloc B</div>
+            <h3>Conception & architecture</h3>
+            <ul>
+              <li>Analyse des besoins et rédaction de cahier des charges</li>
+              <li>Conception d’architecture logicielle</li>
+              <li>Modélisation et gestion de base de données</li>
+              <li>Développement d’accès aux données (SQL / NoSQL)</li>
+            </ul>
+          </div>
+
+          <!-- BLOC C -->
+          <div class="bloc-card bloc-c">
+            <div class="bloc-label">Bloc C</div>
+            <h3>Tests & déploiement</h3>
+            <ul>
+              <li>Réalisation de plans de tests</li>
+              <li>Tests fonctionnels et validation</li>
+              <li>Préparation du déploiement</li>
+              <li>Mise en production (DevOps, CI/CD)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MISSIONS REFUSÉES -->
+      <div class="section">
+        <div class="section-title">Missions refusées</div>
+        <div class="refus-box">
+          <ul>
+            <li>Missions uniquement de support ou maintenance basique</li>
+            <li>Tâches sans développement réel</li>
+            <li>Aucune participation à un projet informatique</li>
+            <li>Pas de dimension technique (ex : saisie, bureautique)</li>
+            <li>Durée de stage insuffisante</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COMPÉTENCES -->
+      <div class="section">
+        <div class="section-title">Compétences attendues</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Domaine</th><th>Exemples</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Développement</td>
+              <td>Front-end, back-end, full-stack</td>
+            </tr>
+            <tr>
+              <td>Architecture</td>
+              <td>Conception logicielle, bases de données</td>
+            </tr>
+            <tr>
+              <td>Tests</td>
+              <td>Tests unitaires, validation</td>
+            </tr>
+            <tr>
+              <td>Déploiement</td>
+              <td>CI/CD, mise en production</td>
+            </tr>
+            <tr>
+              <td>Projet</td>
+              <td>Méthodes agiles, travail en équipe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- RAPPELS -->
+      <div class="section">
+        <div class="section-title">Rappels importants</div>
+        <div class="info-box">
+          <ul>
+            <li>Le stage doit inclure un <strong>projet de développement concret</strong></li>
+            <li>Les missions doivent couvrir plusieurs compétences du référentiel</li>
+            <li>La sécurité des applications est une exigence constante</li>
+            <li>Un projet sera présenté lors de l’évaluation finale</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        Usage interne — Équipe pédagogique ITIC — Titre CDA Niveau 6
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
