@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage — Management Stratégique et Financier des Organisations | ITIC</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li class="dropdown">
+        <button class="dropdown-toggle">BTS ▾</button>
+        <div class="dropdown-menu">
+          <div class="menu-label">Niveau 5</div>
+          <a href="../bts/index.html">Voir les BTS</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-toggle">Bachelors ▾</button>
+        <div class="dropdown-menu">
+          <div class="menu-label">Niveau 6</div>
+          <a href="../bachelor/ais.html">Administrateur d'Infrastructures Sécurisées</a>
+          <a href="../bachelor/cda.html">Concepteur Développeur d'Applications</a>
+          <a href="../bachelor/rh.html">Bachelor Ressources Humaines</a>
+          <a href="../bachelor/cmde.html">Chargé de Marketing Digital & E-commerce</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-toggle active">Mastères ▾</button>
+        <div class="dropdown-menu">
+          <div class="menu-label">Niveau 7</div>
+          <a href="mrh.html">Manager des Ressources Humaines</a>
+          <a href="cyber.html">Expert IT Cybersécurité & Haute Disponibilité</a>
+          <a href="msfo.html">Management Stratégique & Financier</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="filiere-header">
+      <h1>Management Stratégique et Financier des Organisations</h1>
+      <p class="subtitle">Mastère européen FEDE — Niveau 7 — 120 ECTS (60 + 60) — Certificateur : FEDE</p>
+      <span class="badge">Fiche Stage & Épreuves — M1 & M2</span>
+    </div>
+
+    <div class="content-card">
+
+      <!-- ====== DURÉE STAGE ====== -->
+      <div class="section">
+        <div class="section-title">Durées minimales de stage / entreprise</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Situation</th><th>Durée minimum</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stage en entreprise — M1<div class="note-gris">Mission professionnelle (UC D42)</div></td>
+              <td><span class="chiffre-gros">12 semaines</span></td>
+            </tr>
+            <tr>
+              <td>Stage en entreprise — M2<div class="note-gris">Thèse professionnelle (UC D52) — min. 3 mois</div></td>
+              <td><span class="chiffre-gros">12 semaines</span></td>
+            </tr>
+            <tr>
+              <td>Alternance / emploi salarié<div class="note-gris">Contrat pro, apprentissage ou emploi — M1 ou M2</div></td>
+              <td><span class="chiffre-gros">Durée du contrat</span></td>
+            </tr>
+            <tr>
+              <td>Projet tutoré (dérogatoire)<div class="note-gris">M1 uniquement — si impossibilité de stage</div></td>
+              <td><span class="chiffre-gros">¼ du volume</span> de formation hors stage</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          Le terrain de stage doit être validé par l'équipe pédagogique. Un <strong>certificat de fin de stage</strong> (durée, dates, missions) est exigé le jour de la soutenance. Le stage peut être scindé en 2 parties ou organisé en alternance. Il peut se dérouler <strong>à l'étranger</strong>. Les missions doivent relever du <strong>management et de la stratégie financière d'entreprise</strong>.
+        </div>
+      </div>
+
+      <!-- ====== ARCHITECTURE M1 ====== -->
+      <div class="section">
+        <div class="section-title">Architecture des épreuves — 1ère année (M1)</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Épreuve</th><th>Modalité</th><th>Durée</th><th>Coeff.</th><th>ECTS</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UC D41.1 — Management des organisations</td>
+              <td>QCM (60 questions)</td>
+              <td><span class="chiffre-gros">1 h</span></td>
+              <td>4</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>UC D41.2 — Gestion des RH et des organisations</td>
+              <td>Exercices pratiques</td>
+              <td><span class="chiffre-gros">2 h</span></td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>UC D42 — Soutenance : Mission professionnelle</td>
+              <td>Grand oral (mémoire)</td>
+              <td><span class="chiffre-gros">1 h</span></td>
+              <td>4</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>UC D43 — Stratégie financière</td>
+              <td>Contrôle continu (min. 4 évaluations)</td>
+              <td>Variable</td>
+              <td>6</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>UC B4 — Langue Vivante 1 (écrit)</td>
+              <td>Compréhension + production écrite — B2</td>
+              <td><span class="chiffre-gros">1 h 45</span></td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>UC A4/5 — Transition écologique</td>
+              <td>QCM en ligne (40 questions)</td>
+              <td><span class="chiffre-gros">1 h</span></td>
+              <td>2</td>
+              <td>16</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          <strong>Total M1 : 60 ECTS — Coefficient : 20.</strong> Pour D41.1 : ni calculatrice ni documents autorisés. Pour D41.2 et D43 : calculatrice autorisée. Les épreuves facultatives (A2, A3, B4 LV2) comptent uniquement les points au-dessus de 10/20, en double.
+        </div>
+      </div>
+
+      <!-- ====== ARCHITECTURE M2 ====== -->
+      <div class="section">
+        <div class="section-title">Architecture des épreuves — 2ème année (M2)</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Épreuve</th><th>Modalité</th><th>Durée</th><th>Coeff.</th><th>ECTS</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UC D51.1 — Management stratégique des organisations</td>
+              <td>Étude de cas</td>
+              <td><span class="chiffre-gros">4 h</span></td>
+              <td>4</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>UC D51.2 — Management stratégique & entrepreneuriat</td>
+              <td>Étude de cas</td>
+              <td><span class="chiffre-gros">4 h</span></td>
+              <td>6</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>UC D52 — Soutenance : Thèse professionnelle</td>
+              <td>Grand oral (thèse)</td>
+              <td><span class="chiffre-gros">1 h</span></td>
+              <td>4</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>UC D53 — Ingénierie financière & management des risques</td>
+              <td>Contrôle continu (min. 4 évaluations)</td>
+              <td>Variable</td>
+              <td>4</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>UC B5 — Langue Vivante 1 (oral)</td>
+              <td>Présentation note de synthèse + entretien — B2</td>
+              <td><span class="chiffre-gros">45 min</span></td>
+              <td>2</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          <strong>Total M2 : 60 ECTS — Coefficient : 20.</strong> Pour D51.1 : ni calculatrice ni documents autorisés. Pour D51.2 : calculatrice autorisée. La thèse M2 doit intégrer une <strong>réflexion sur la transition écologique</strong> (UC A4/5). L'UC A4/5 est obligatoire pour les apprenants entrant directement en M2.
+        </div>
+      </div>
+
+      <!-- ====== BLOCS M1 ====== -->
+      <div class="section">
+        <div class="section-title">Compétences & missions — 1ère année (M1)</div>
+        <p class="section-intro">Les missions en entreprise doivent traiter de problématiques liées à la conduite du changement digital, à la culture entrepreneuriale, aux RH ou à la stratégie financière.</p>
+
+        <div class="blocs-grid">
+
+          <div class="bloc-card bloc-a">
+            <div class="bloc-label">UC D41.1 — 150 à 190 h</div>
+            <h3>Management des organisations</h3>
+            <ul>
+              <li>Transformation digitale : enjeux, technologies (mobile, cloud, IoT, analytics), e-CRM, data mining, BYOD</li>
+              <li>Conduite du changement : diagnostic humain, acceptabilité vs résistance, maturité digitale, pilotage</li>
+              <li>Plan de communication du changement : périmètre, budget, délais, indicateurs</li>
+              <li>Leviers RH et managériaux : leadership, perception individuelle, processus décisionnels</li>
+              <li>Culture d'entreprise : outil de performance (Mintzberg), types d'autorité (Weber), leadership (Blake & Morton, McGregor)</li>
+              <li>RSE et management par la qualité (Ishikawa)</li>
+              <li>Entrepreneuriat : profil entrepreneur, facteurs culturels, dimensions économiques et sociales</li>
+              <li>Statuts juridiques : entreprise individuelle, sociétaire, commerçant, artisan</li>
+              <li>Création d'entreprise : faisabilité, SWOT, business plan, financement, levée de fonds</li>
+              <li>Innovation, créativité et marketing digital</li>
+            </ul>
+          </div>
+
+          <div class="bloc-card bloc-b">
+            <div class="bloc-label">UC D41.2 — 60 à 80 h</div>
+            <h3>Gestion des RH et des organisations</h3>
+            <ul>
+              <li>RH stratégiques : contribution du capital humain à la performance globale</li>
+              <li>Nouvelles formes de GRH : recrutement, motivation, formation, rémunération (fixe, variable, intéressement)</li>
+              <li>Modèles de management : par qualification, compétence, talent, participatif, pyramide inversée</li>
+              <li>Management socio-économique : coûts cachés (absentéisme, turnover, défauts), Pareto, Ishikawa, 5 Pourquoi, QQOQCCP</li>
+              <li>Gestion du temps et management de la qualité (Deming, Six Sigma)</li>
+              <li>Communication interpersonnelle et gestion des conflits sociaux</li>
+              <li>Risques psychosociaux (RPS) et qualité de vie au travail (QVT)</li>
+            </ul>
+          </div>
+
+          <div class="bloc-card bloc-c">
+            <div class="bloc-label">UC D43 — 130 à 180 h</div>
+            <h3>Stratégie financière</h3>
+            <ul>
+              <li>Analyse quantitative (30-40 h) : statistiques, indices, corrélation, régression, loi normale, probabilités</li>
+              <li>Valeur et temps : intérêts simples/composés, actualisation, capitalisation, taux continu</li>
+              <li>Théorie financière : rentabilité/risque, décisions en incertitude, théorie de portefeuille</li>
+              <li>Gestion de portefeuille : MEDAF, frontière d'efficience, diversification</li>
+              <li>Contrôle et audit internes (30-40 h) : COSO, surveillance permanente, environnement de contrôle, audit interne/externe</li>
+              <li>Secret professionnel, blanchiment d'argent, délits d'initiés</li>
+              <li>Analyse financière (30-40 h) : documents financiers, IAS/IFRS, ratios, effet de levier, consolidation</li>
+              <li>Stratégies financières court/long terme (30-40 h) : budget de trésorerie, plan de financement, VAN, TIR, IP</li>
+              <li>Produits dérivés : forward, futures, swaps, options (call, put)</li>
+            </ul>
+          </div>
+
+          <div class="bloc-card bloc-d">
+            <div class="bloc-label">UC D42 — 12 semaines min.</div>
+            <h3>Mission professionnelle — Mémoire M1</h3>
+            <ul>
+              <li>Problématique liée au management et/ou à la stratégie financière d'entreprise</li>
+              <li>Démarche : analyse des environnements, diagnostic, préconisations stratégiques</li>
+              <li>Utilisation encouragée : matrices d'analyse, budget prévisionnel 2-3 ans, outils stratégiques</li>
+              <li>Mémoire : ≈ 40-50 pages + 10 pages annexes max</li>
+              <li>Soutenance grand oral : exposé 30-40 min + discussion jury 20-30 min</li>
+              <li>Note : mémoire 30 % + soutenance orale 70 %</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====== BLOCS M2 ====== -->
+      <div class="section">
+        <div class="section-title">Compétences & missions — 2ème année (M2)</div>
+        <p class="section-intro">En M2, l'accent est mis sur le management stratégique, l'entrepreneuriat, l'ingénierie financière et l'éthique des affaires. La thèse doit intégrer les enjeux de transition écologique.</p>
+
+        <div class="blocs-grid">
+
+          <div class="bloc-card bloc-a">
+            <div class="bloc-label">UC D51.1 — 100 à 125 h</div>
+            <h3>Management stratégique des organisations</h3>
+            <ul>
+              <li>Concept de stratégie (20-25 h) : Chandler, Ansoff, corporate/business/operational strategy</li>
+              <li>Axes de développement : recentrage, intégration, internationalisation, diversification</li>
+              <li>Types de management : concurrentiel, entrepreneurial, sociétal, administratif</li>
+              <li>Modèles stratégiques (20-25 h) : SWOT/LCAG, Porter (DAS), Penrose (ressources/compétences)</li>
+              <li>Limites de la planification stratégique (critique de Mintzberg)</li>
+              <li>Stratégie et structure organisationnelle (20-25 h) : design, veille stratégique, IT sourcing, SI</li>
+              <li>Décision stratégique (20-25 h) : Herbert Simon, information segmentée (Mintzberg)</li>
+              <li>Pilotage et performance (20-25 h) : approche systémique, balanced scorecard, tableaux de bord, diagnostic SWOT</li>
+            </ul>
+          </div>
+
+          <div class="bloc-card bloc-b">
+            <div class="bloc-label">UC D51.2 — 150 à 180 h</div>
+            <h3>Management stratégique & Entrepreneuriat</h3>
+            <ul>
+              <li>RSE (30-40 h) : développement durable, ISO 26000, parties prenantes, cartographie</li>
+              <li>Pilotage RSE : stratégie, management RH/finances responsables, chaîne de valeur, management frugal</li>
+              <li>Entrepreneuriat & Business Plan (120-140 h) : vocabulaire, démarche, culture d'entreprise</li>
+              <li>Business model : matrice d'Osterwalder, stratégie Océan Bleu</li>
+              <li>Mise en œuvre : PESTEL, Porter, DAS, SWOT, segmentation stratégique et marketing</li>
+              <li>Données juridiques, fiscales et sociales de la création</li>
+              <li>Prévisionnel des ventes : flux de trésorerie, VAN, TRI, indice de profitabilité</li>
+              <li>Plan de financement prévisionnel, matrice des risques, leviers de croissance</li>
+              <li>Executive summary et pitch de présentation</li>
+            </ul>
+          </div>
+
+          <div class="bloc-card bloc-c">
+            <div class="bloc-label">UC D53 — 240 à 300 h</div>
+            <h3>Ingénierie financière & Management des risques</h3>
+            <ul>
+              <li>Gestion obligataire (40-50 h) : ORA, OCA, OBSA, OCEANE, OAT, duration, sensibilité, convexité</li>
+              <li>Évaluation & ingénierie financière (40-50 h) : Gordon-Shapiro, PER, DCF, goodwill, titrisation</li>
+              <li>Management des risques (40-50 h) : méthodes quantitatives, régressions, VaR, stress test</li>
+              <li>Risque bancaire (Bâle II/III), risque assurance (Solvabilité II), fonds d'investissement (UCITS)</li>
+              <li>Gestion de portefeuille (40-50 h) : marchés, diversification, MEDAF, finance comportementale</li>
+              <li>Finances d'entreprise & stratégie (40-50 h) : ABC, contrôle budgétaire, balanced scorecard</li>
+              <li>Fusions-acquisitions, consolidation (IFRS), LBO, optimisation fiscale</li>
+              <li>Évaluation d'entreprise : DCF, patrimoniale, parités de fusion</li>
+              <li>Éthique des affaires (40-50 h) : déontologie, code IFAC, conflits d'intérêts, réglementation audit</li>
+            </ul>
+          </div>
+
+          <div class="bloc-card bloc-d">
+            <div class="bloc-label">UC D52 — 12 semaines min.</div>
+            <h3>Thèse professionnelle — M2</h3>
+            <ul>
+              <li>Recherche appliquée : management stratégique et/ou financier d'entreprise</li>
+              <li>Intégration obligatoire des enjeux de transition écologique (UC A4/5)</li>
+              <li>Thèse : ≈ 50-70 pages — validée par le Directeur de thèse</li>
+              <li>Soutenance grand oral : exposé 30-40 min + discussion jury 15-20 min</li>
+              <li>Note : thèse écrite 30 % + soutenance orale 70 %</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====== QCM D41.1 ====== -->
+      <div class="section">
+        <div class="section-title">Détail — Épreuve UC D41.1 (QCM — 1 h)</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Thème</th><th>Nombre de questions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Accompagnement et conduite du changement à l'ère du digital</td><td><span class="chiffre-gros">30</span></td></tr>
+            <tr><td>Culture et style de management</td><td><span class="chiffre-gros">10</span></td></tr>
+            <tr><td>Culture entrepreneuriale, innovation et statuts juridiques</td><td><span class="chiffre-gros">20</span></td></tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          60 questions — 180 points. Barème : +3 par bonne réponse, 0 pour non-réponse ou erreur. <strong>Aucun document ni calculatrice autorisé.</strong>
+        </div>
+      </div>
+
+      <!-- ====== MÉMOIRE M1 ====== -->
+      <div class="section">
+        <div class="section-title">Mémoire M1 (UC D42) — Normes de présentation</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Critère</th><th>Exigence</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Volume</td><td><strong>40 à 50 pages</strong> hors annexes</td></tr>
+            <tr><td>Annexes</td><td>10 feuilles A4 maximum — provenance indiquée</td></tr>
+            <tr><td>Format</td><td>A4, impression recto, marges 2,5 cm, interligne 1,5, relié</td></tr>
+            <tr><td>Exemplaires</td><td>Au moins 2 (jury + apprenant)</td></tr>
+            <tr><td>Page de titre</td><td>Nom, prénom, n° candidat FEDE, titre du mémoire, « Examens de la FEDE », année</td></tr>
+            <tr><td>Structure</td><td>Introduction (commande + problématique), développement (2-3 parties), conclusion, bibliographie, annexes</td></tr>
+            <tr><td>Délai de remise</td><td><strong>3 semaines</strong> avant l'épreuve — 2 exemplaires au centre d'examen</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ====== THÈSE M2 ====== -->
+      <div class="section">
+        <div class="section-title">Thèse professionnelle M2 (UC D52) — Normes de présentation</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Critère</th><th>Exigence</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Volume</td><td><strong>50 à 70 pages</strong> hors annexes</td></tr>
+            <tr><td>Format</td><td>A4, impression recto, marges 2,5 cm, interligne 1,5, relié</td></tr>
+            <tr><td>Exemplaires</td><td>Au moins 2 (jury + apprenant)</td></tr>
+            <tr><td>Page de titre</td><td>Nom, prénom, n° candidat FEDE, titre, « Thèse professionnelle [...] de [année] »</td></tr>
+            <tr><td>Structure</td><td>Introduction (question + problématique), développement (2-3 parties), conclusion, bibliographie obligatoire, annexes</td></tr>
+            <tr><td>Validation</td><td>Titre, plan et attendus validés par le <strong>Directeur de thèse</strong> avant la soutenance</td></tr>
+            <tr><td>Transition écologique</td><td>Réflexion critique obligatoire (RSE, éco-conception, performance environnementale, économie circulaire…)</td></tr>
+            <tr><td>Délai de remise</td><td><strong>3 semaines</strong> avant l'épreuve — 2 exemplaires</td></tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          <strong>IA générative (M1 et M2) :</strong> utilisation autorisée sous conditions — <strong>déclarer</strong> les outils et leur finalité. Générer le texte par IA est <strong>assimilé à du plagiat</strong> et peut entraîner une disqualification. L'IA ne peut pas être citée comme auteur.
+        </div>
+      </div>
+
+      <!-- ====== SOUTENANCE DETAIL ====== -->
+      <div class="section">
+        <div class="section-title">Déroulement des soutenances (M1 & M2)</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Phase</th><th>M1 — Mission pro (UC D42)</th><th>M2 — Thèse pro (UC D52)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Exposé</strong></td>
+              <td>30 à 40 min — sans interruption</td>
+              <td>30 à 40 min — sans interruption</td>
+            </tr>
+            <tr>
+              <td><strong>Discussion jury</strong></td>
+              <td>20 à 30 min</td>
+              <td>15 à 20 min</td>
+            </tr>
+            <tr>
+              <td><strong>Durée totale</strong></td>
+              <td><span class="chiffre-gros">1 h</span></td>
+              <td><span class="chiffre-gros">1 h</span></td>
+            </tr>
+            <tr>
+              <td><strong>Jury</strong></td>
+              <td>1 enseignant spécialité + 1 professionnel</td>
+              <td>1 enseignant spécialité + 1 professionnel</td>
+            </tr>
+            <tr>
+              <td><strong>Répartition note</strong></td>
+              <td>Écrit 30 % + Oral 70 %</td>
+              <td>Écrit 30 % + Oral 70 %</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          Pour la M2, le tuteur professionnel et le Directeur de thèse peuvent <strong>assister à la soutenance</strong> mais <strong>ne participent pas à l'évaluation finale</strong>. Pas de temps de préparation.
+        </div>
+      </div>
+
+      <!-- ====== LANGUE VIVANTE ====== -->
+      <div class="section">
+        <div class="section-title">Langue vivante européenne — Niveau B2 du CECR</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Épreuve</th><th>Année</th><th>Contenu</th><th>Durée</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>UC B4 — Écrit</strong></td>
+              <td><span class="tag-m1">M1</span></td>
+              <td>Compréhension écrite (20 QCM) + lexique/grammaire (20 trous) + essai argumentatif (320-380 mots)</td>
+              <td><span class="chiffre-gros">1 h 45</span></td>
+            </tr>
+            <tr>
+              <td><strong>UC B5 — Oral</strong></td>
+              <td><span class="tag-m2">M2</span></td>
+              <td>Présentation orale (20 min) d'une note de synthèse de 15-20 pages en LV (basée sur la thèse D52) + discussion jury (25 min)</td>
+              <td><span class="chiffre-gros">45 min</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          La LV choisie doit être <strong>différente</strong> de la langue des épreuves pro et européennes. Même LV pour B4 et B5. La note de synthèse doit être transmise <strong>3 semaines avant</strong> l'épreuve. L'oral B5 évalue <strong>exclusivement</strong> les compétences linguistiques.
+        </div>
+      </div>
+
+      <!-- ====== MISSIONS REFUSÉES ====== -->
+      <div class="section">
+        <div class="section-title">Missions refusées</div>
+        <div class="refus-box">
+          <ul>
+            <li>Missions purement exécutives sans dimension stratégique ou financière</li>
+            <li>Aucun lien avec le management, la stratégie ou la finance d'entreprise</li>
+            <li>Pas de tuteur avec une fonction management/finance identifiée</li>
+            <li>Durée de stage inférieure à 12 semaines</li>
+            <li>Absence de problématique exploitable pour le mémoire (M1) ou la thèse (M2)</li>
+            <li>Missions sans composante analytique (diagnostic, audit, préconisations)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ====== PERSPECTIVES ====== -->
+      <div class="section">
+        <div class="section-title">Perspectives d'emploi</div>
+        <p class="section-intro">Le Mastère prépare aux fonctions de management et de stratégie financière dans les domaines suivants :</p>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Domaine</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ressources Humaines</td></tr>
+            <tr><td>Gestion et contrôle de gestion</td></tr>
+            <tr><td>Management et direction générale</td></tr>
+            <tr><td>Marketing et stratégie commerciale</td></tr>
+            <tr><td>Commercial et Business to Business (B2B)</td></tr>
+            <tr><td>Environnement international</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ====== RAPPELS ====== -->
+      <div class="section">
+        <div class="section-title">Rappels importants</div>
+        <table class="table-clean">
+          <thead>
+            <tr><th>Point</th><th>Détail</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prérequis d'entrée</td>
+              <td>180 ECTS validés ou certification de niveau 6 du CEC dans la spécialité</td>
+            </tr>
+            <tr>
+              <td>Langue vivante</td>
+              <td>Niveau B2 du CECR obligatoire — même LV pour B4 (écrit M1) et B5 (oral M2)</td>
+            </tr>
+            <tr>
+              <td>Transition écologique</td>
+              <td>UC A4/5 obligatoire en M1 (QCM 40 questions, 1 h) — à intégrer dans la thèse M2</td>
+            </tr>
+            <tr>
+              <td>Horaires indicatifs M1</td>
+              <td>150-190 h (D41.1) + 60-80 h (D41.2) + 130-180 h (D43) + 60-80 h (LV) + 40 h (A4/5)</td>
+            </tr>
+            <tr>
+              <td>Horaires indicatifs M2</td>
+              <td>100-125 h (D51.1) + 150-180 h (D51.2) + 240-300 h (D53) + 60-80 h (LV)</td>
+            </tr>
+            <tr>
+              <td>Épreuves facultatives</td>
+              <td>A2 (Projet européen), A3 (Management interculturel), B4 LV2 — points > 10/20 comptent double</td>
+            </tr>
+            <tr>
+              <td>Certificat de stage</td>
+              <td>Obligatoire à chaque soutenance — mentions : durée, dates, missions</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box" style="margin-top: 20px;">
+          Le Mastère européen Management Stratégique et Financier des Organisations totalise <strong>120 ECTS</strong> (60 par année) et est accessible dans le réseau international FEDE de près de <strong>500 établissements</strong> dans 40 pays.
+        </div>
+      </div>
+
+      <div class="footer">
+        Usage interne — Équipe pédagogique ITIC — Mastère européen Management Stratégique et Financier des Organisations — Certificateur : FEDE — v.03/2026
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
