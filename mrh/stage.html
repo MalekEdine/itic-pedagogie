@@ -9,16 +9,28 @@
 <body>
 
   <!-- NAVIGATION -->
-  <nav>
-    <a href="../index.html" class="logo">ITIC Pédagogie</a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Accueil</a></li>
-      <li><a href="stage.html" class="active">MRH</a></li>
-      <!-- Ajouter ici les autres filières plus tard -->
-      <!-- <li><a href="../bts-gpme/stage.html">BTS GPME</a></li> -->
-      <!-- <li><a href="../bts-cg/stage.html">BTS CG</a></li> -->
-    </ul>
-  </nav>
+<nav>
+  <a href="../index.html" class="logo">ITIC <span class="logo-accent">Pédagogie</span></a>
+  <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li class="dropdown">
+      <button class="dropdown-toggle active">Mastères ▾</button>
+      <div class="dropdown-menu">
+        <div class="menu-label">Niveau 7</div>
+        <a href="stage.html">Manager des Ressources Humaines</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <button class="dropdown-toggle">BTS ▾</button>
+      <div class="dropdown-menu">
+        <div class="menu-label">Niveau 5</div>
+        <a href="../bts-sio/stage.html">BTS SIO (SISR / SLAM)</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
 
   <div class="container">
 
