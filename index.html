@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITIC Pédagogie — Fiches Stages & Missions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="logo">ITIC <span class="logo-accent">Pédagogie</span></a>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li class="dropdown">
+        <button class="dropdown-toggle">Mastères ▾</button>
+        <div class="dropdown-menu">
+          <div class="menu-label">Niveau 7</div>
+          <a href="mrh/stage.html">Manager des Ressources Humaines</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropdown-toggle">BTS ▾</button>
+        <div class="dropdown-menu">
+          <div class="menu-label">Niveau 5</div>
+          <a href="bts-sio/stage.html">BTS SIO (SISR / SLAM)</a>
+          <!-- Ajouter ici les futurs BTS -->
+          <!-- <a href="bts-gpme/stage.html">BTS GPME</a> -->
+          <!-- <a href="bts-cg/stage.html">BTS CG</a> -->
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>ITIC <span>Pédagogie</span></h1>
+      <p>Fiches stages, missions acceptées et guides pratiques pour l'équipe pédagogique. Sélectionnez une filière ci-dessous.</p>
+    </div>
+
+    <!-- GRILLE DES FILIÈRES -->
+    <div class="filieres-grid">
+
+      <!-- MRH -->
+      <a href="mrh/stage.html" class="filiere-card card-mrh">
+        <span class="card-badge">Niveau 7 — RNCP 38493</span>
+        <h3>Manager des Ressources Humaines</h3>
+        <p>M1 & M2 — Titre RNCP certifié par ARTEMYS-IMC. Durées de stage, missions par bloc de compétences, obligations tuteur.</p>
+        <span class="card-arrow">Voir la fiche →</span>
+      </a>
+
+      <!-- BTS SIO -->
+      <a href="bts-sio/stage.html" class="filiere-card card-sio">
+        <span class="card-badge">Niveau 5 — Diplôme d'État</span>
+        <h3>BTS SIO</h3>
+        <p>Option SISR & SLAM — Durées de stage, missions par bloc, livrables attendus, épreuves E4 & E5.</p>
+        <span class="card-arrow">Voir la fiche →</span>
+      </a>
+
+      <!-- BTS GPME — À VENIR -->
+      <!--
+      <a href="bts-gpme/stage.html" class="filiere-card card-gpme">
+        <span class="card-badge">Niveau 5 — Diplôme d'État</span>
+        <h3>BTS GPME</h3>
+        <p>Gestion de la PME — À venir.</p>
+        <span class="card-arrow">Voir la fiche →</span>
+      </a>
+      -->
+
+      <!-- BTS CG — À VENIR -->
+      <!--
+      <a href="bts-cg/stage.html" class="filiere-card card-cg">
+        <span class="card-badge">Niveau 5 — Diplôme d'État</span>
+        <h3>BTS CG</h3>
+        <p>Comptabilité et Gestion — À venir.</p>
+        <span class="card-arrow">Voir la fiche →</span>
+      </a>
+      -->
+
+    </div>
+
+    <!-- Footer Home -->
+    <div style="text-align: center; margin-top: 50px; font-size: 12px; color: #95a5a6;">
+      Usage interne — Équipe pédagogique ITIC — 2025/2026
+    </div>
+
+  </div>
+
+</body>
+</html>
