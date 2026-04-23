@@ -107,7 +107,8 @@ nav .dropdown-menu {
   display: none;
   position: absolute;
   top: calc(100% + 8px);
-  left: 0;
+  left: 20%;
+  transform: translateX(-50%);
   background: #1a1d2e;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
@@ -255,9 +256,12 @@ nav .hamburger:hover {
 
 .card-mrh::before { background: linear-gradient(90deg, #6c9fff, #a78bfa); }
 .card-sio::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
+.card-communication::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
 .card-gpme::before { background: linear-gradient(90deg, #fbbf24, #f59e0b); }
 .card-cg::before { background: linear-gradient(90deg, #f97316, #fb923c); }
+.card-mco::before { background: linear-gradient(90deg, #f97316, #fb923c); }
 .card-ndrc::before { background: linear-gradient(90deg, #a78bfa, #c4b5fd); }
+.card-ci::before { background: linear-gradient(90deg, #a78bfa, #c4b5fd); }
 
 .filiere-card .card-badge {
   display: inline-block;
@@ -272,9 +276,12 @@ nav .hamburger:hover {
 
 .card-mrh .card-badge { background: rgba(108, 159, 255, 0.1); color: #6c9fff; }
 .card-sio .card-badge { background: rgba(52, 211, 153, 0.1); color: #34d399; }
+.card-communication .card-badge { background: rgba(52, 211, 153, 0.1); color: #34d399; }
 .card-gpme .card-badge { background: rgba(251, 191, 36, 0.1); color: #fbbf24; }
 .card-cg .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
+.card-mco .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
 .card-ndrc .card-badge { background: rgba(167, 139, 250, 0.1); color: #a78bfa; }
+.card-ci .card-badge { background: rgba(167, 139, 250, 0.1); color: #a78bfa; }
 
 .filiere-card h3 {
   font-size: 20px;
