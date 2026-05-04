@@ -254,7 +254,7 @@ nav .hamburger:hover {
   opacity: 1;
 }
 
-.card-mrh::before { background: linear-gradient(90deg, #6c9fff, #a78bfa); }
+.card-mrh::before { background: linear-gradient(90deg, #6c9fff, #a78bfa); } 
 .card-ais::before { background: linear-gradient(90deg, #6c9fff, #a78bfa); }
 .card-sio::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
 .card-eisi::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
