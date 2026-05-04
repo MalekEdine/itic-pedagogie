@@ -258,10 +258,12 @@ nav .hamburger:hover {
 .card-ais::before { background: linear-gradient(90deg, #6c9fff, #a78bfa); }
 .card-sio::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
 .card-eisi::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
+.card-mo::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
 .card-communication::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
 .card-cda::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
 .card-gpme::before { background: linear-gradient(90deg, #fbbf24, #f59e0b); }
 .card-cg::before { background: linear-gradient(90deg, #f97316, #fb923c); }
+.card-cyber::before { background: linear-gradient(90deg, #f97316, #fb923c); }
 .card-mcm::before { background: linear-gradient(90deg, #f97316, #fb923c); }
 .card-mco::before { background: linear-gradient(90deg, #f97316, #fb923c); }
 .card-cmde::before { background: linear-gradient(90deg, #f97316, #fb923c); }
@@ -289,6 +291,7 @@ nav .hamburger:hover {
 .card-eisi .card-badge { background: rgba(52, 211, 153, 0.1); color: #34d399; }
 .card-gpme .card-badge { background: rgba(251, 191, 36, 0.1); color: #fbbf24; }
 .card-cg .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
+.card-cyber .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
 .card-mcm .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
 .card-mco .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
 .card-cmde .card-badge { background: rgba(249, 115, 22, 0.1); color: #f97316; }
