@@ -3,59 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><!-- TITRE --> | ITIC Pédagogie</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <title>Mastères | ITIC Pédagogie</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
-    <a href="../../index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
-
+    <a href="../index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
     <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-
     <ul class="nav-links">
-        <li><a href="../../index.html">Accueil</a></li>
-        <li><a href="../bts/index.html">BTS</a></li>
-        <li><a href="../bachelor/index.html">Bachelor</a></li>
-        <li><a href="../mastere/index.html">Mastères</a></li>
+        <li><a href="../index.html">Accueil</a></li>
+        <li class="dropdown">
+            <button class="dropdown-toggle">BTS ▾</button>
+            <div class="dropdown-menu">
+                <div class="menu-label">Niveau 5</div>
+                <a href="../bts/sio.html">BTS SIO (SISR / SLAM)</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <button class="dropdown-toggle">Bachelors ▾</button>
+            <div class="dropdown-menu">
+                <div class="menu-label">Niveau 6</div>
+                <a href="../bachelor/ais.html">Administrateur d'Infrastructures Sécurisées</a>
+                <a href="../bachelor/cda.html">Concepteur Développeur d'Applications</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <button class="dropdown-toggle active">Mastères ▾</button>
+            <div class="dropdown-menu">
+                <div class="menu-label">Niveau 7</div>
+                <a href="eisi.html">Expert en Informatique et SI</a>
+                <a href="cyber.html">Cybersécurité & Haute Disponibilité</a>
+            </div>
+        </li>
     </ul>
 </nav>
 
-<!-- CONTENU -->
 <div class="container">
 
-    <a href="../../index.html" class="btn-retour">← Retour</a>
+    <a href="../index.html" class="btn-retour">← Retour</a>
+
+    <div class="hero">
+        <div class="hero-badge">Niveau 7 — Mastère</div>
+        <h1>Formations <span>Mastère</span></h1>
+        <p>Sélectionnez une spécialité pour accéder à la fiche stage, missions acceptées et épreuves.</p>
+    </div>
 
     <div class="filieres-grid">
 
         <a href="cyber.html" class="filiere-card card-cyber">
-            <span class="card-badge">MAST</span>
-            <h3>MASTERE CYBER</h3>
+            <span class="card-badge">Mastère — Niveau 7</span>
+            <h3>Expert IT — Cybersécurité & Haute Dispo</h3>
+            <p>Réseaux avancés, sécurité des SI, haute disponibilité Windows et Linux.</p>
             <span class="card-arrow">Voir la fiche →</span>
         </a>
-        <a href="../../businessschool/mastere/mo.html" class="filiere-card card-mo">
-            <span class="card-badge">MAST</span>
-            <h3>MASTERE MO</h3>
-            <span class="card-arrow">Voir la fiche →</span>
-        </a>
-        <a href="../../businessschool/mastere/mrh.html" class="filiere-card card-mrh">
-            <span class="card-badge">MAST</span>
-            <h3>MASTERE MRH</h3>
-            <span class="card-arrow">Voir la fiche →</span>
-        </a>
-        <a href="../../businessschool/mastere/mcm.html" class="filiere-card card-mcm">
-            <span class="card-badge">MAST</span>
-            <h3>MASTERE MCM</h3>
-            <span class="card-arrow">Voir la fiche →</span>
-        </a>
+
         <a href="eisi.html" class="filiere-card card-eisi">
-            <span class="card-badge">MAST</span>
-            <h3>MASTERE EISI</h3>
+            <span class="card-badge">Mastère — Niveau 7</span>
+            <h3>Expert en Informatique et SI</h3>
+            <p>Ingénierie IT, cybersécurité, développement, data et pilotage des systèmes d'information.</p>
             <span class="card-arrow">Voir la fiche →</span>
         </a>
 
     </div>
+
     <div style="text-align: center; margin-top: 60px; font-size: 11px; color: #4a5568;">
         ITIC — 2025/2026
     </div>

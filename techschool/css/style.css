@@ -41,8 +41,6 @@ nav .logo {
     gap: 2px;
 }
 
-
-
 nav .logo span.logo-accent {
     color: #6c9fff;
 }
@@ -73,14 +71,6 @@ nav .nav-links a.active {
     color: #ffffff;
     background: rgba(108, 159, 255, 0.15);
 }
-
-nav {
-    background: transparent;
-    border-bottom: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-}
-
 
 /* Dropdown */
 nav .dropdown {
@@ -693,4 +683,3 @@ nav .hamburger:hover {
         display: block;
     }
 }
-
