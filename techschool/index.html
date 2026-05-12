@@ -3,67 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIC Pédagogie — Fiches Stages & Missions</title>
+    <title>ITIC TechSchool — Pédagogie</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
-<!-- NAVBAR SIMPLIFIÉE -->
+<!-- DÉGRADÉ FIXE -->
+<div class="page-gradient-wrapper">
+    <img src="images/Dégradés%20Bleus.svg" alt="" class="page-gradient-top" />
+    <img src="images/Dégradés%20Bleus.svg" alt="" class="page-gradient-bottom" />
+</div>
+
+<!-- NAVBAR -->
 <nav>
-    <a href="index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
-
-    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-
-    <ul class="nav-links">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="bts/index.html">BTS</a></li>
-        <li><a href="bachelor/index.html">Bachelor</a></li>
-        <li><a href="mastere/index.html">Mastères</a></li>
-    </ul>
+    <a href="index.html" class="logo">
+        <img src="images/logo%20ITIC%20noir.svg" alt="ITIC" class="logo-img">
+    </a>
 </nav>
 
-<!-- CONTENU -->
-<div class="container">
-
-    <!-- HERO -->
-    <div class="hero">
-        <div class="hero-badge">Usage interne — Équipe pédagogique</div>
-        <h1>ITIC <span>Pédagogie</span></h1>
-        <p>Fiches stages, missions acceptées et guides pratiques. Sélectionnez un niveau de formation.</p>
+<!-- HERO -->
+<section class="hero-full">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <h1>Retrouvez toutes les infos<br>de votre <span class="grad-1">cursus</span>, vos <span class="grad-2">épreuves</span><br>et vos <span class="grad-3">documents</span>.</h1>
+            <a href="bts/index.html" class="hero-cta">ACCÉDER À MON ESPACE →</a>
+        </div>
+        <div class="hero-right">
+            <img src="images/iStock-2228764569.jpg" alt="Étudiants" class="hero-illustration" />
+        </div>
     </div>
-
-    <!-- CARTES NIVEAUX -->
-    <div class="filieres-grid">
-
-        <a href="bts/index.html" class="filiere-card card-sio">
-            <span class="card-badge">Niveau 5 — Diplôme d'État</span>
-            <h3>BTS</h3>
-            <p>Formations techniques et professionnalisantes. Accédez aux fiches stages et missions par spécialité.</p>
-            <span class="card-arrow">Voir les formations →</span>
-        </a>
-
-        <a href="bachelor/index.html" class="filiere-card card-ndrc">
-            <span class="card-badge">Niveau 6 — Bachelor</span>
-            <h3>Bachelor</h3>
-            <p>Développement, systèmes, marketing digital. Consultez les exigences de stage et les missions attendues.</p>
-            <span class="card-arrow">Voir les formations →</span>
-        </a>
-
-        <a href="mastere/index.html" class="filiere-card card-mrh">
-            <span class="card-badge">Niveau 7 — Mastère</span>
-            <h3>Mastères</h3>
-            <p>Expertise métier et management. Détails des stages, missions par bloc et obligations pédagogiques.</p>
-            <span class="card-arrow">Voir les formations →</span>
-        </a>
-
-    </div>
-
-    <!-- FOOTER -->
-    <div style="text-align: center; margin-top: 60px; font-size: 11px; color: #4a5568;">
-        ITIC — 2025/2026
-    </div>
-
-</div>
+</section>
 
 </body>
 </html>
