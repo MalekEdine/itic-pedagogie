@@ -5,37 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stage — BTS SIO | ITIC</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
-  <nav>
-    <a href="../index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
-    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <ul class="nav-links">
-      <li><a href="../index.html">Accueil</a></li>
-      <li class="dropdown">
-        <button class="dropdown-toggle active">BTS <!--▾--></button>
-        <div class="dropdown-menu">
-          <div class="menu-label">Niveau 5</div>
-        </div>
-      </li>
-      <li class="dropdown">
-        <button class="dropdown-toggle">Bachelor ▾</button>
-        <div class="dropdown-menu">
-          <div class="menu-label">Niveau 7</div>
-          <a href="../bachelor/ais.html">Administrateur d’Infrastructures Sécurisées</a>
-          <a href="../bachelor/cda.html">Concepteur Développeur d’Applications</a>
-        </div>
-      </li>    <li class="dropdown">
-      <button class="dropdown-toggle">Mastères ▾</button>
-      <div class="dropdown-menu">
-        <div class="menu-label">Niveau 7</div>
-        <a href="../mastere/cyber.html">Expert IT — Cybersécurité et Haute Disponibilité </a>
-        <a href="../mastere/eisi.html">Expert IT — Expert en informatique et système d'information </a>
-      </div>
-    </li>
-    </ul>
-  </nav>
+<nav>
+  <a href="../index.html" class="logo">
+    <img src="../images/logo%20ITIC%20noir.svg" alt="ITIC" class="logo-img">
+  </a>
+  <ul class="nav-links-inline">
+    <li><a href="../bts/index.html">BTS</a></li>
+    <li><a href="../bachelor/index.html">Bachelor</a></li>
+    <li><a href="../mastere/index.html">Mastères</a></li>
+  </ul>
+</nav>
 
   <div class="container">
 
@@ -273,6 +256,21 @@
 
     </div>
   </div>
+
+<script>
+  let lastScroll = 0;
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll > lastScroll && currentScroll > 64) {
+      nav.style.transform = 'translateY(-100%)';
+    } else {
+      nav.style.transform = 'translateY(0)';
+    }
+    lastScroll = currentScroll;
+  });
+</script>
+
 
 </body>
 </html>

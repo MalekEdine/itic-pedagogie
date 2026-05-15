@@ -3,60 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTS | ITIC Pédagogie</title>
+  <title>BTS | ITIC TechSchool</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
-<nav>
-  <a href="../index.html" class="logo">ITIC<span class="logo-accent">Péda</span></a>
-  <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+<!-- DÉGRADÉ FIXE -->
+<div class="page-gradient-wrapper">
+  <img src="../images/Dégradés%20Bleus.svg" alt="" class="page-gradient-top" />
+  <img src="../images/Dégradés%20Bleus.svg" alt="" class="page-gradient-bottom" />
+</div>
 
-  <ul class="nav-links">
-    <li><a href="../index.html">Accueil</a></li>
-    <li class="dropdown">
-      <button class="dropdown-toggle active">BTS<!--▾--></button>
-      <div class="dropdown-menu">
-        <div class="menu-label">Niveau 5</div>
-          <!--Ajout d'autre formations-->
-      </div>
-    </li>
-    <li class="dropdown">
-      <button class="dropdown-toggle">Bachelors ▾</button>
-      <div class="dropdown-menu">
-        <div class="menu-label">Niveau 6</div>
-        <a href="../bachelor/ais.html">Administrateur d'Infrastructures Sécurisées</a>
-        <a href="../bachelor/cda.html">Concepteur Développeur d'Applications</a>
-      </div>
-    </li>
-    <li class="dropdown">
-      <button class="dropdown-toggle">Mastères ▾</button>
-      <div class="dropdown-menu">
-        <div class="menu-label">Niveau 7</div>
-        <a href="../mastere/eisi.html">Expert en Informatique et SI</a>
-        <a href="../mastere/cyber.html">Cybersécurité & Haute Disponibilité</a>
-      </div>
-    </li>
+<!-- NAVBAR -->
+<nav>
+  <a href="../index.html" class="logo">
+    <img src="../images/logo%20ITIC%20noir.svg" alt="ITIC" class="logo-img">
+  </a>
+  <ul class="nav-links-inline">
+    <li><a href="../bts/index.html">BTS</a></li>
+    <li><a href="../bachelor/index.html">Bachelor</a></li>
+    <li><a href="../mastere/index.html">Mastères</a></li>
   </ul>
 </nav>
 
-<div class="container">
+<!-- CONTENU -->
+<div class="niveaux-page">
 
-  <a href="../index.html" class="btn-retour">← Retour</a>
-
-  <div class="hero">
-    <div class="hero-badge">Niveau 5 — Diplôme d'État</div>
-    <h1>Formations <span>BTS</span></h1>
+  <div class="niveaux-header">
+    <a href="../niveaux.html" class="btn-retour">← Retour</a>
+    <span class="section-badge">Niveau 5 — Diplôme d'État</span>
+    <h1>Formations <span class="grad-1">BTS</span></h1>
     <p>Sélectionnez une spécialité pour accéder à la fiche stage, missions acceptées et épreuves.</p>
   </div>
 
-  <div class="filieres-grid">
+  <div class="niveaux-grid single">
 
-    <a href="sio.html" class="filiere-card card-sio">
-      <span class="card-badge">BTS — Niveau 5</span>
-      <h3>BTS SIO (SISR / SLAM)</h3>
-      <p>Services Informatiques aux Organisations — options SISR et SLAM. Stages, missions et épreuves.</p>
-      <span class="card-arrow">Voir la fiche →</span>
+    <a href="sio.html" class="niveau-card">
+      <div class="niveau-img">
+        <img src="../images/iStock-2235717305.jpg" alt="BTS SIO" />
+        <div class="niveau-img-overlay"></div>
+      </div>
+      <div class="niveau-body">
+        <span class="niveau-tag">BTS — Niveau 5</span>
+        <h2>BTS SIO</h2>
+        <p>Services Informatiques aux Organisations — options SISR et SLAM. Stages, missions et épreuves détaillées.</p>
+        <span class="niveau-link">Voir la fiche →</span>
+      </div>
     </a>
 
   </div>
@@ -66,6 +59,20 @@
   </div>
 
 </div>
+
+<script>
+  let lastScroll = 0;
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll > lastScroll && currentScroll > 64) {
+      nav.style.transform = 'translateY(-100%)';
+    } else {
+      nav.style.transform = 'translateY(0)';
+    }
+    lastScroll = currentScroll;
+  });
+</script>
 
 </body>
 </html>

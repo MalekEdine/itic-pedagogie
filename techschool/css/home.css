@@ -212,6 +212,40 @@ nav .hamburger {
     border-radius: 16px;
 }
 
+
+/* ========== NAVBAR LIENS INLINE ========== */
+.nav-links-inline {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links-inline a {
+    color: #8b95a5;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+    display: block;
+}
+
+.nav-links-inline a:hover {
+    background: linear-gradient(to right, #659EFF, #5031EE);
+    color: #ffffff;
+}
+
+.nav-links-inline a.active {
+    background: linear-gradient(to right, #659EFF, #5031EE);
+    color: #ffffff;
+}
+
+
+
 /* ========== HERO ========== */
 .hero-full {
     position: relative;
@@ -457,6 +491,17 @@ nav .hamburger {
     font-weight: 600;
     color: #659EFF;
     margin-top: 8px;
+}
+
+
+.niveaux-grid.single {
+    display: flex;
+    justify-content: center;
+}
+
+.niveaux-grid.single .niveau-card {
+    max-width: 380px;
+    width: 100%;
 }
 
 /* ========== RESPONSIVE ========== */
