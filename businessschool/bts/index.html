@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS | ITIC BusinessSchool</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<!-- DÉGRADÉ FIXE -->
+<div class="page-gradient-wrapper">
+    <div class="page-gradient-top"></div>
+    <div class="page-gradient-bottom"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="../index.html" class="logo">
+        <img src="../images/logo%20ITIC%20noir.svg" alt="ITIC" class="logo-img">
+    </a>
+    <ul class="nav-links-inline">
+        <li><a href="../bts/index.html">BTS</a></li>
+        <li><a href="../bachelor/index.html">Bachelor</a></li>
+        <li><a href="../mastere/index.html">Mastères</a></li>
+    </ul>
+</nav>
+
+<!-- CONTENU -->
+<div class="niveaux-page">
+
+    <div class="niveaux-header">
+        <a href="../niveaux.html" class="btn-retour">← Retour</a>
+        <span class="section-badge">Niveau 5 — Diplôme d'État</span>
+        <h1>Formations <span class="grad-1">BTS</span></h1>
+        <p>Sélectionnez une spécialité pour accéder à la fiche stage, missions acceptées et épreuves.</p>
+    </div>
+
+    <div class="niveaux-grid">
+
+        <a href="cg.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="../images/iStock-1393635828.jpg" alt="BTS CG" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">BTS — Niveau 5</span>
+                <h2>Comptabilité et Gestion</h2>
+                <p>Comptabilité, fiscalité, gestion sociale et pilotage financier des organisations.</p>
+                <span class="niveau-link">Voir la fiche →</span>
+            </div>
+        </a>
+
+        <a href="ci.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="../images/iStock-2180253872.jpg" alt="BTS CI" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">BTS — Niveau 5</span>
+                <h2>Commerce International</h2>
+                <p>Développement commercial à l'international, import-export, logistique et négociation.</p>
+                <span class="niveau-link">Voir la fiche →</span>
+            </div>
+        </a>
+
+        <a href="communication.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="../images/iStock-2043994652.jpg" alt="BTS Communication" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">BTS — Niveau 5</span>
+                <h2>Communication</h2>
+                <p>Stratégie de communication, création de contenu, gestion de projets communication.</p>
+                <span class="niveau-link">Voir la fiche →</span>
+            </div>
+        </a>
+
+        <a href="mco.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="../images/iStock-1403897452.jpg" alt="BTS MCO" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">BTS — Niveau 5</span>
+                <h2>Management Commercial Opérationnel</h2>
+                <p>Gestion d'unité commerciale, relation client, vente et management d'équipe.</p>
+                <span class="niveau-link">Voir la fiche →</span>
+            </div>
+        </a>
+
+        <a href="ndrc.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="../images/iStock-2263252194.jpg" alt="BTS NDRC" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">BTS — Niveau 5</span>
+                <h2>Négociation et Digitalisation de la Relation Client</h2>
+                <p>Prospection, vente, fidélisation et relation client omnicanale.</p>
+                <span class="niveau-link">Voir la fiche →</span>
+            </div>
+        </a>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; font-size: 11px; color: #4a5568;">
+        ITIC — 2025/2026
+    </div>
+
+</div>
+
+<script>
+    let lastScroll = 0;
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll > lastScroll && currentScroll > 64) {
+            nav.style.transform = 'translateY(-100%)';
+        } else {
+            nav.style.transform = 'translateY(0)';
+        }
+        lastScroll = currentScroll;
+    });
+</script>
+
+</body>
+</html>
