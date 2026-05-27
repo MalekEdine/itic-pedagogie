@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos formations | ITIC BusinessSchool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- DÉGRADÉ FIXE -->
+<div class="page-gradient-wrapper">
+    <div class="page-gradient-top"></div>
+    <div class="page-gradient-bottom"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html" class="logo">
+        <img src="images/logo%20ITIC%20noir.svg" alt="ITIC" class="logo-img">
+    </a>
+    <ul class="nav-links-inline">
+        <li><a href="bts/index.html">BTS</a></li>
+        <li><a href="bachelor/index.html">Bachelor</a></li>
+        <li><a href="mastere/index.html">Mastères</a></li>
+    </ul>
+</nav>
+
+<!-- CONTENU -->
+<div class="niveaux-page">
+
+    <div class="niveaux-header">
+        <a href="index.html" class="btn-retour">← Retour</a>
+        <span class="section-badge">Formations</span>
+        <h1>Choisissez votre <span class="grad-1">niveau</span></h1>
+        <p>Accédez aux fiches pédagogiques, stages et épreuves par niveau de formation.</p>
+    </div>
+
+    <div class="niveaux-grid">
+
+        <a href="bts/index.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="images/iStock-2043994652.jpg" alt="BTS" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">Niveau 5 — Diplôme d'État</span>
+                <h2>BTS</h2>
+                <p>Commerce, négociation, communication et gestion. Stages, missions et épreuves détaillées.</p>
+                <span class="niveau-link">Voir les fiches →</span>
+            </div>
+        </a>
+
+        <a href="bachelor/index.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="images/iStock-2221643463.jpg" alt="Bachelor" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">Niveau 6 — Bachelor</span>
+                <h2>Bachelor</h2>
+                <p>Marketing digital, ressources humaines. Exigences de stage et compétences attendues.</p>
+                <span class="niveau-link">Voir les fiches →</span>
+            </div>
+        </a>
+
+        <a href="mastere/index.html" class="niveau-card">
+            <div class="niveau-img">
+                <img src="images/iStock-2180253872.jpg" alt="Mastère" />
+                <div class="niveau-img-overlay"></div>
+            </div>
+            <div class="niveau-body">
+                <span class="niveau-tag">Niveau 7 — Mastère</span>
+                <h2>Mastère</h2>
+                <p>Manager Commercial, Manager des Organisations, Manager RH. Missions et obligations pédagogiques.</p>
+                <span class="niveau-link">Voir les fiches →</span>
+            </div>
+        </a>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; font-size: 11px; color: #4a5568;">
+        ITIC — 2025/2026
+    </div>
+
+</div>
+
+<script>
+    let lastScroll = 0;
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll > lastScroll && currentScroll > 64) {
+            nav.style.transform = 'translateY(-100%)';
+        } else {
+            nav.style.transform = 'translateY(0)';
+        }
+        lastScroll = currentScroll;
+    });
+</script>
+
+</body>
+</html>
