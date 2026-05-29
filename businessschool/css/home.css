@@ -47,7 +47,7 @@
     width: 800px;
     height: 800px;
     opacity: 0.25;
-    background: radial-gradient(circle, rgba(255, 107, 53, 0.6) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 220, 0, 0.6) 0%, transparent 70%);
 }
 
 .page-gradient-bottom {
@@ -57,7 +57,7 @@
     width: 800px;
     height: 800px;
     opacity: 0.2;
-    background: radial-gradient(circle, rgba(232, 67, 147, 0.5) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 20, 147, 0.5) 0%, transparent 70%);
 }
 
 /* ========== NAVBAR ========== */
@@ -127,7 +127,7 @@ nav .hamburger {
 }
 
 .nav-menu-left {
-    background: linear-gradient(160deg, #0a0c14 0%, #2d1010 60%, #1a0a0a 100%);
+    background: linear-gradient(160deg, #0a0c14 0%, #1a1500 60%, #0a0a00 100%);
     padding: 120px 60px;
     display: flex;
     align-items: flex-start;
@@ -141,7 +141,7 @@ nav .hamburger {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(255,107,53,0.2) 0%, transparent 60%);
+    background: radial-gradient(circle at 30% 50%, rgba(255,220,0,0.15) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -177,14 +177,14 @@ nav .hamburger {
 }
 
 .nav-links a:hover {
-    background: linear-gradient(to right, #FF6B35, #E84393);
+    background: linear-gradient(to right, #FFDC00, #FF1493);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .nav-links a.active {
-    background: linear-gradient(to right, #FF6B35, #E84393);
+    background: linear-gradient(to right, #FFDC00, #FF1493);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -230,13 +230,13 @@ nav .hamburger {
 }
 
 .nav-links-inline a:hover {
-    background: linear-gradient(to right, #FF6B35, #E84393);
-    color: #ffffff;
+    background: linear-gradient(to right, #FFDC00, #FF1493);
+    color: #0f1117;
 }
 
 .nav-links-inline a.active {
-    background: linear-gradient(to right, #FF6B35, #E84393);
-    color: #ffffff;
+    background: linear-gradient(to right, #FFDC00, #FF1493);
+    color: #0f1117;
 }
 
 /* ========== HERO ========== */
@@ -276,21 +276,21 @@ nav .hamburger {
 }
 
 .grad-1 {
-    background: linear-gradient(to right, #FF6B35, #ff9a35);
+    background: linear-gradient(to right, #FFDC00, #FFB300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .grad-2 {
-    background: linear-gradient(to right, #ff9a35, #E84393);
+    background: linear-gradient(to right, #FFB300, #FF1493);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .grad-3 {
-    background: linear-gradient(to right, #FF6B35, #E84393);
+    background: linear-gradient(to right, #FFDC00, #FF1493);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -300,8 +300,8 @@ nav .hamburger {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(to right, #FF6B35, #E84393);
-    color: #ffffff;
+    background: linear-gradient(to right, #FFDC00, #FF1493);
+    color: #0f1117;
     font-size: 13px;
     font-weight: 700;
     padding: 14px 28px;
@@ -315,7 +315,7 @@ nav .hamburger {
 
 .hero-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.5);
+    box-shadow: 0 8px 30px rgba(255, 220, 0, 0.4);
 }
 
 .hero-right {
@@ -329,7 +329,7 @@ nav .hamburger {
     height: 480px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 0 80px rgba(255, 107, 53, 0.15);
+    box-shadow: 0 0 80px rgba(255, 220, 0, 0.15);
 }
 
 /* ========== PAGE NIVEAUX ========== */
@@ -391,15 +391,15 @@ nav .hamburger {
 
 .section-badge {
     display: inline-block;
-    background: rgba(255, 107, 53, 0.15);
-    color: #FF6B35;
+    background: rgba(255, 220, 0, 0.15);
+    color: #FFDC00;
     font-size: 10px;
     font-weight: 700;
     padding: 5px 14px;
     border-radius: 20px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    border: 1px solid rgba(255, 107, 53, 0.25);
+    border: 1px solid rgba(255, 220, 0, 0.25);
 }
 
 .niveaux-grid {
@@ -431,9 +431,9 @@ nav .hamburger {
 }
 
 .niveau-card:hover {
-    border-color: rgba(255, 107, 53, 0.3);
+    border-color: rgba(255, 220, 0, 0.3);
     transform: translateY(-6px);
-    box-shadow: 0 24px 60px rgba(255, 107, 53, 0.15);
+    box-shadow: 0 24px 60px rgba(255, 220, 0, 0.1);
 }
 
 .niveau-img {
@@ -472,7 +472,7 @@ nav .hamburger {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FF6B35;
+    color: #FFDC00;
 }
 
 .niveau-body h2 {
@@ -492,13 +492,32 @@ nav .hamburger {
 .niveau-link {
     font-size: 13px;
     font-weight: 600;
-    color: #FF6B35;
+    color: #FFDC00;
     margin-top: 8px;
 }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
     nav { padding: 0 20px; }
+
+    /* CACHER LES LIENS INLINE EN MOBILE */
+    .nav-links-inline {
+        display: none;
+    }
+
+    /* AFFICHER LE BURGER EN MOBILE */
+    .nav-right {
+        display: flex;
+    }
+
+    nav .hamburger {
+        display: flex !important;
+    }
+
+    /* NAVBAR JUSTIFY */
+    nav {
+        justify-content: space-between;
+    }
 
     .hero-inner {
         grid-template-columns: 1fr;
