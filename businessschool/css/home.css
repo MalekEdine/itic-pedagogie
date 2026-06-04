@@ -80,12 +80,8 @@ nav {
 }
 
 .nav-right {
-    display: flex;
+    display: none;
     align-items: center;
-}
-
-nav .hamburger {
-    display: flex !important;
 }
 
 .hamburger {
@@ -496,35 +492,64 @@ nav .hamburger {
     margin-top: 8px;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========================================
+   RESPONSIVE — TABLETTE (768px - 1024px)
+   ======================================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    nav { padding: 0 24px; }
+
+    /* HERO */
+    .hero-inner {
+        padding: 0 32px;
+        gap: 40px;
+    }
+
+    .hero-left h1 { font-size: 40px; }
+
+    .hero-illustration { height: 380px; }
+
+    /* NIVEAUX */
+    .niveaux-page { padding: 100px 32px 60px; }
+    .niveaux-header h1 { font-size: 36px; }
+    .niveaux-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* MENU BURGER */
+    .nav-links-inline { display: none; }
+    .nav-right { display: flex; }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE (max 768px)
+   ======================================== */
 @media (max-width: 768px) {
-    nav { padding: 0 20px; }
 
-    /* CACHER LES LIENS INLINE EN MOBILE */
-    .nav-links-inline {
-        display: none;
-    }
-
-    /* AFFICHER LE BURGER EN MOBILE */
-    .nav-right {
-        display: flex;
-    }
-
-    nav .hamburger {
-        display: flex !important;
-    }
-
-    /* NAVBAR JUSTIFY */
+    /* NAVBAR */
     nav {
+        padding: 0 20px;
         justify-content: space-between;
     }
 
+    .nav-links-inline { display: none; }
+    .nav-right { display: flex; }
+    nav .hamburger { display: flex !important; }
+
+    /* MENU BURGER */
+    .nav-menu { grid-template-columns: 1fr; }
+    .nav-menu-right { display: none; }
+    .nav-links a { font-size: 36px; }
+    .nav-menu-left { padding: 80px 28px; gap: 24px; }
+
+    /* HERO */
+    .hero-full { padding-top: 64px; }
+
     .hero-inner {
         grid-template-columns: 1fr;
-        padding: 0 24px;
-        gap: 40px;
+        padding: 0 20px;
+        gap: 0;
         position: relative;
         min-height: 100vh;
+        align-items: center;
     }
 
     .hero-right {
@@ -539,30 +564,52 @@ nav .hamburger {
         height: 100%;
         object-fit: cover;
         border-radius: 0;
-        opacity: 0.3;
+        opacity: 0.25;
         box-shadow: none;
     }
 
     .hero-left {
         position: relative;
         z-index: 1;
-        padding-top: 80px;
+        padding-top: 100px;
+        gap: 24px;
     }
 
-    .hero-left h1 { font-size: 32px; letter-spacing: -0.5px; }
-    .hero-cta { font-size: 12px; padding: 12px 22px; }
+    .hero-left h1 {
+        font-size: 36px;
+        letter-spacing: -0.5px;
+    }
 
-    .nav-menu { grid-template-columns: 1fr; }
-    .nav-menu-right { display: none; }
-    .nav-links a { font-size: 32px; }
-    .nav-menu-left { padding: 80px 32px; gap: 28px; }
+    .hero-cta {
+        font-size: 12px;
+        padding: 12px 20px;
+        letter-spacing: 0.5px;
+    }
 
-    .niveaux-page { padding: 100px 0 40px; }
-    .niveaux-header { padding: 0 20px; margin-bottom: 40px; }
-    .niveaux-header h1 { font-size: 28px; }
+    /* NIVEAUX */
+    .niveaux-page { padding: 90px 0 40px; }
+
+    .niveaux-header {
+        padding: 0 20px;
+        margin-bottom: 32px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .niveaux-header h1 {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+    }
+
     .niveaux-header p { font-size: 14px; }
-    .btn-retour { align-self: center; }
 
+    .btn-retour {
+        align-self: flex-start;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* GRILLE CARDS — scroll horizontal */
     .niveaux-grid {
         display: flex;
         flex-direction: row;
@@ -577,13 +624,39 @@ nav .hamburger {
 
     .niveaux-grid::-webkit-scrollbar { display: none; }
 
+    .niveaux-grid.single {
+        justify-content: flex-start;
+    }
+
     .niveau-card {
-        flex: 0 0 80vw;
+        flex: 0 0 78vw;
         scroll-snap-align: center;
         border-radius: 16px;
     }
 
-    .niveau-img { height: 180px; }
-    .niveau-body { padding: 20px; }
-    .niveau-body h2 { font-size: 22px; }
+    .niveau-img { height: 170px; }
+
+    .niveau-body {
+        padding: 18px;
+        gap: 8px;
+    }
+
+    .niveau-body h2 { font-size: 20px; }
+    .niveau-body p { font-size: 12px; }
+}
+
+/* ========================================
+   RESPONSIVE — PETIT MOBILE (max 480px)
+   ======================================== */
+@media (max-width: 480px) {
+
+    .hero-left h1 { font-size: 28px; }
+
+    .niveaux-header h1 { font-size: 24px; }
+
+    .niveau-card { flex: 0 0 88vw; }
+
+    .nav-links a { font-size: 28px; }
+
+    .nav-menu-left { padding: 80px 20px; }
 }
