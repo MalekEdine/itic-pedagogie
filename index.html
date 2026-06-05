@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIC Paris — Pédagogie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .schools {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .school {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: flex 0.5s ease;
+            cursor: pointer;
+        }
+
+        .school:hover {
+            flex: 1.4;
+        }
+
+        /* TECHSCHOOL */
+        .school-tech {
+            background: #0a0c14;
+        }
+
+        .school-tech::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                    radial-gradient(ellipse at 20% 50%, rgba(80, 49, 238, 0.5) 0%, transparent 55%),
+                    radial-gradient(ellipse at 80% 50%, rgba(255, 180, 0, 0.3) 0%, transparent 55%);
+            z-index: 0;
+        }
+
+        /* BUSINESSSCHOOL */
+        .school-business {
+            background: #FF6B35;
+        }
+
+        .school-business::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                    radial-gradient(ellipse at 80% 50%, rgba(255, 20, 147, 0.4) 0%, transparent 55%),
+                    radial-gradient(ellipse at 20% 50%, rgba(255, 220, 0, 0.2) 0%, transparent 55%);
+            z-index: 0;
+        }
+
+        .school-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .school-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .school-name {
+            font-size: clamp(48px, 8vw, 100px);
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -2px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .school-tech .school-name span {
+            color: #FF6B35;
+        }
+
+        .school-business .school-name span {
+            color: #E84393;
+        }
+
+        .school-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            margin-top: 8px;
+        }
+
+        .school-tech .school-cta {
+            background: linear-gradient(to right, #659EFF, #5031EE);
+            color: #ffffff;
+        }
+
+        .school-tech .school-cta:hover {
+            box-shadow: 0 8px 30px rgba(80, 49, 238, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .school-business .school-cta {
+            background: #ffffff;
+            color: #FF6B35;
+        }
+
+        .school-business .school-cta:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* DIVIDER */
+        .divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: rgba(255,255,255,0.1);
+            z-index: 2;
+        }
+
+        /* LOGO */
+        .main-logo {
+            position: fixed;
+            top: 24px;
+            left: 40px;
+            z-index: 100;
+        }
+
+        .main-logo img {
+            height: 32px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            body { overflow: auto; }
+            .schools { flex-direction: column; height: auto; min-height: 100vh; }
+            .school { min-height: 50vh; flex: none; padding: 60px 20px; }
+            .school:hover { flex: none; }
+            .school-name { font-size: 48px; }
+            .main-logo { left: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- LOGO PRINCIPAL -->
+<div class="main-logo">
+    <img src="techschool/images/logo%20ITIC%20noir.svg" alt="ITIC Paris" />
+</div>
+
+<div class="schools">
+
+    <!-- TECHSCHOOL -->
+    <a href="techschool/niveaux.html" class="school school-tech">
+        <div class="school-content">
+            <span class="school-label">Vous êtes etudiant tech ?</span>
+            <div class="school-name">ITIC <span>TECH</span>SCHOOL</div>
+            <span class="school-cta">Je découvre les formations →</span>
+        </div>
+        <div class="divider"></div>
+    </a>
+
+    <!-- BUSINESSSCHOOL -->
+    <a href="businessschool/niveaux.html" class="school school-business">
+        <div class="school-content">
+            <span class="school-label">Vous êtes etudiant business ?</span>
+            <div class="school-name">ITIC <span>BUSINESS</span>SCHOOL</div>
+            <span class="school-cta">Je découvre les formations →</span>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>

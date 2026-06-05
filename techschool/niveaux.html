@@ -23,21 +23,25 @@
     <a href="../../index.html" class="logo">
         <img src="images/logo%20ITIC%20noir.svg" alt="ITIC" class="logo-img">
     </a>
-    <div class="nav-menu" id="nav-menu">
-        <div class="nav-menu-left">
-            <img src="images/logo%20ITIC%20noir.svg" alt="ITIC" class="nav-menu-logo" />
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="bts/index.html">BTS</a></li>
-                <li><a href="bachelor/index.html">Bachelor</a></li>
-                <li><a href="mastere/index.html">Mastères</a></li>
-            </ul>
-        </div>
-        <div class="nav-menu-right">
-            <img src="images/iStock-2235717305.webp" alt="TechSchool" loading="lazy"/>
-        </div>
+    <div class="nav-right">
+        <button class="hamburger" id="menuBtn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
     </div>
 </nav>
+
+<!-- MENU BURGER PLEIN ECRAN -->
+<div class="nav-menu" id="navMenu">
+    <div class="nav-menu-left">
+        <img src="images/logo%20ITIC%20noir.svg" alt="ITIC" class="nav-menu-logo">
+        <ul class="nav-links">
+            <li><a href="bts/index.html">BTS</a></li>
+            <li><a href="bachelor/index.html">Bachelor</a></li>
+            <li><a href="mastere/index.html">Mastères</a></li>
+        </ul>
+    </div>
+    <div class="nav-menu-right">
+        <img src="images/iStock-2235717305.webp" alt="TechSchool" loading="lazy"/>
+    </div>
+</div>
 
 <!-- CONTENU -->
 <div class="niveaux-page">
@@ -93,6 +97,26 @@
 </div>
 
 <script>
+
+    function toggleMenu() {
+        var menu = document.getElementById("navMenu");
+        var btn = document.getElementById("menuBtn");
+        var isOpen = menu.classList.toggle("open");
+        btn.innerHTML = isOpen ? "&#10005;" : "&#9776;";
+        document.body.style.overflow = isOpen ? "hidden" : "";
+    }
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            var menu = document.getElementById("navMenu");
+            var btn = document.getElementById("menuBtn");
+            if (menu.classList.contains("open")) {
+                menu.classList.remove("open");
+                btn.innerHTML = "&#9776;";
+                document.body.style.overflow = "";
+            }
+        }
+    });
+
     let lastScroll = 0;
     const nav = document.querySelector('nav');
 
